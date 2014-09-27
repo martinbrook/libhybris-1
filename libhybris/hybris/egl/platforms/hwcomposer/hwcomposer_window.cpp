@@ -183,7 +183,7 @@ int HWComposerNativeWindow::dequeueBuffer(BaseNativeWindowBuffer** buffer, int *
     }
     HYBRIS_TRACE_END("hwcomposer-platform", "dequeueBuffer-wait", "");
 
-    assert(fbnb!=NULL);
+    //assert(fbnb!=NULL);
     fbnb->busy = 1;
 
     *buffer = fbnb;
